@@ -1,0 +1,5 @@
+@use "../utilities/functions" as u;
+
+main {
+  padding: u.rem(64) u.rem(24);
+}

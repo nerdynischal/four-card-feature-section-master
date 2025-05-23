@@ -1,3 +1,44 @@
+@use "../utilities/functions" as u;
+
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.tagline {
+  font-weight: 200;
+}
+
+.tagline,
+h1 {
+  font-size: u.rem(32);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--grey-500);
+}
+
+.sub-title {
+  font-size: u.rem(16);
+  padding: u.rem(20) u.rem(12);
+}
+
+h1,
+.tagline,
+.sub-title {
+  text-align: center;
+}
+
+h2 {
+  font-size: u.rem(20);
+  font-weight: 600;
+  color: var(--grey-500);
+  margin-bottom: u.rem(12);
+}
+
+p,
+.tagline,
+.sub-title {
+  color: var(--grey-400);
 }

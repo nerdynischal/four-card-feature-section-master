@@ -1,0 +1,39 @@
+@use "../utilities/functions" as u;
+
+.card {
+  background: var(--white);
+  padding: u.rem(42);
+  padding-bottom: u.rem(52);
+  border-radius: u.rem(8);
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(42);
+  box-shadow: u.rem(0) u.rem(12) u.rem(24) u.rem(-1) rgba(62, 116, 161, 0.328);
+
+  .icon-container {
+    align-self: flex-end;
+  }
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(32);
+  margin-top: u.rem(52);
+}
+
+.supervisor {
+  border-top: u.rem(4) solid var(--cyan);
+}
+
+.team-builder {
+  border-top: u.rem(4) solid var(--red);
+}
+
+.karma {
+  border-top: u.rem(4) solid var(--orange);
+}
+
+.calculator {
+  border-top: u.rem(4) solid var(--blue);
+}
