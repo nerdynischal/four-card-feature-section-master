@@ -1,4 +1,4 @@
-@use "../utilities/functions" as u;
+@use "../utilities" as u;
 
 .card {
   background: var(--white);
@@ -10,8 +10,12 @@
   gap: u.rem(42);
   box-shadow: u.rem(0) u.rem(12) u.rem(24) u.rem(-1) rgba(62, 116, 161, 0.328);
 
+  height: fit-content;
   .icon-container {
     align-self: flex-end;
+  }
+  @include u.breakpoint(xlarge) {
+    width: 33%;
   }
 }
 
@@ -20,6 +24,28 @@
   flex-direction: column;
   gap: u.rem(32);
   margin-top: u.rem(52);
+
+  @include u.breakpoint(xlarge) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(32);
+
+  @include u.breakpoint(xlarge) {
+    width: 33%;
+  }
+
+  .card {
+    @include u.breakpoint(xlarge) {
+      width: 100%;
+    }
+  }
 }
 
 .supervisor {
